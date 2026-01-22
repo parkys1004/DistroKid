@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Music, CloudUpload, Video, CheckCircle, Ban, Info, ChevronRight, Rocket, UserCheck } from 'lucide-react';
+import { Music, UploadCloud, Video, CheckCircle, Ban, Info, ChevronRight, Rocket, UserCheck } from 'lucide-react';
 import { TabId } from './types';
 
 // Tab Components
@@ -19,7 +19,7 @@ const App: React.FC = () => {
   if (!mounted) return null;
 
   const tabs = [
-    { id: 'distrokid', label: 'DistroKid 등록', icon: <CloudUpload className="w-5 h-5" /> },
+    { id: 'distrokid', label: 'DistroKid 등록', icon: <UploadCloud className="w-5 h-5" /> },
     { id: 'spotify-auth', label: 'Spotify 인증', icon: <UserCheck className="w-5 h-5" /> },
     { id: 'canvas', label: 'Canvas 영상', icon: <Video className="w-5 h-5" /> },
   ] as const;
